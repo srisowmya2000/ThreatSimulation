@@ -69,7 +69,10 @@ npm run dev
 
 ### Initiating a Cyber Simulation
 1. Once both servers are running, open your web browser to `http://localhost:5173/`.
-2. Input your defensive telemetry in the "Active Defenses" box.
-3. Select an adversary from the dropdown (e.g., *APT29, LockBit, Cl0p*).
-4. Enter an authorized target domain architecture URL.
-5. Click **Initiate Assault**. The backend GraphRAG pipeline will spin up parallel parallelized environments and stream the live exploit logs to the UI!
+
+   <img width="1131" height="1238" alt="image" src="https://github.com/user-attachments/assets/f2fd27a2-6d9b-43bf-9bc3-8c202733b661" />
+
+3. Input your defensive telemetry in the "Active Defenses" box.
+4. Select an adversary from the dropdown (e.g., *APT29, LockBit, Cl0p*).
+5. Enter an authorized target domain architecture URL.
+6. Click **Initiate Assault**. The backend GraphRAG pipeline will spin up parallel parallelized environments and stream the live exploit logs to the UI!
