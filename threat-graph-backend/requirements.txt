@@ -1,0 +1,12 @@
+fastapi>=0.104.0
+uvicorn>=0.23.2
+neo4j>=5.14.1
+pydantic>=2.4.2
+anthropic>=0.30.0
+python-dotenv>=1.0.0
+crewai>=0.28.8
+zep-python>=2.0.0
+zep-cloud>=3.18.0
+reportlab>=4.0.0
+requests
+beautifulsoup4

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-dark text-cyber-text font-sans antialiased;
+  }
+}
+
+.glass-panel {
+  @apply bg-cyber-panel bg-opacity-80 backdrop-blur-md border border-white/10 rounded-xl shadow-lg transition-all duration-300;
+}
+.glass-panel:hover {
+  @apply border-white/20 shadow-cyber-accent/20;
+}
