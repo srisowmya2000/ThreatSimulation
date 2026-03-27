@@ -31,7 +31,7 @@
 ## 📸 Live Dashboard Preview
 
 <p align="center">
-  <img src="YOUR_SCREENSHOT_URL_HERE" alt="ThreatGraph Dashboard" width="1000"/>
+  <img src="<img width="1131" height="1238" alt="image" src="https://github.com/user-attachments/assets/f2fd27a2-6d9b-43bf-9bc3-8c202733b661" />" alt="ThreatGraph Dashboard" width="1000"/>
 </p>
 
 <p align="center">
@@ -56,7 +56,7 @@ Instead of treating security as a checklist, ThreatGraph attempts to answer:
 
 > **“Given this architecture, these defenses, and this threat actor — how likely is a meaningful breach path?”**
 
-   <img width="1131" height="1238" alt="image" src="https://github.com/user-attachments/assets/f2fd27a2-6d9b-43bf-9bc3-8c202733b661" />
+
 
 ---
 
