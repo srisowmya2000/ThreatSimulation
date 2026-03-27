@@ -31,7 +31,7 @@
 ## 📸 Live Dashboard Preview
 
 <p align="center">
-  <img src="<img width="1131" height="1238" alt="image" src="https://github.com/user-attachments/assets/f2fd27a2-6d9b-43bf-9bc3-8c202733b661" />" alt="ThreatGraph Dashboard" width="1000"/>
+    <img width="1131" height="1238" alt="image" src="https://github.com/user-attachments/assets/f2fd27a2-6d9b-43bf-9bc3-8c202733b661" />
 </p>
 
 <p align="center">
