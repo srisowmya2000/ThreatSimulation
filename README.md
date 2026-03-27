@@ -1,78 +1,136 @@
-# ThreatGraph: AI Cyber Simulation Pipeline 🛡️
+# 🕸️ ThreatGraph  
+### AI-Powered Cyber Simulation • Swarm Intelligence • Attack Path Forecasting
 
-ThreatGraph is a locally hosted, multi-agent cybersecurity simulation engine. It extracts real-world public infrastructure topologies (via GraphRAG) and deploys autonomous Red and Blue Team AI agents to actively simulate Advanced Persistent Threat (APT) kill chains against a targeted network perimeter, visually outputting a calculated Breach Probability Forecast.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.12-111111?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-111111?style=for-the-badge&logo=fastapi" />
+  <img src="https://img.shields.io/badge/Vue.js-Dashboard-111111?style=for-the-badge&logo=vuedotjs" />
+  <img src="https://img.shields.io/badge/Neo4j-Knowledge%20Graph-111111?style=for-the-badge&logo=neo4j" />
+  <img src="https://img.shields.io/badge/CrewAI-Multi--Agent-111111?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Anthropic-Claude-111111?style=for-the-badge" />
+</p>
 
-## ⚠️ Disclaimer
-**FOR EDUCATIONAL AND DEFENSIVE PURPOSES ONLY.** 
-This tool synthesizes dynamically orchestrated network intrusions and attack pathways. Do NOT point the simulation `target_url` at any infrastructure you do not explicitly own, operate, or have legal authorization to test. The authors are not responsible for any misuse.
+<p align="center">
+  <b>Probabilistic Forecasting Engine for Proactive Cyber Defense</b>
+</p>
 
-## Core Technology Stack
-* **Backend:** FastAPI, Python, Uvicorn, CrewAI, Neo4j
-* **Frontend:** Vue.js, Vite, Axios, TailwindCSS
-* **AI Model Pipeline:** Anthropic (Claude 3 Haiku/Sonnet via structured JSON generation)
-
-## Strict Requirements
-* **Python 3.12** (Critical: Python 3.14+ is natively incompatible with the underlying CrewAI and Pydantic bindings. You MUST use Python 3.12 to avoid terminal crashes.)
-* **Node.js** (v18+)
-* **Anthropic API Key** 
-
----
-
-## Installation & Setup
-
-### 1. Backend Setup
-Open a terminal and navigate to the backend directory:
-
-```bash
-cd threat-graph-backend
-
-# Create a Python 3.12 virtual environment (Required)
-python3.12 -m venv venv
-source venv/bin/activate
-
-# Install the simulation and AI dependencies
-pip install -r requirements.txt
-
-# Store your Anthropic token securely
-cp .env.example .env
-# Open the .env file and add your ANTHROPIC_API_KEY
-```
-
-### 2. Frontend Setup
-Open a second terminal window and navigate to the dashboard directory:
-
-```bash
-cd threat-dashboard
-
-# Install frontend Node modules
-npm install
-```
+<p align="center">
+  ThreatGraph is a locally hosted, AI-assisted cyber simulation platform that models attack paths, simulates adversary behavior, and estimates breach probability using swarm-style Red vs. Blue team reasoning.
+</p>
 
 ---
 
-## Running the Architecture Locally
-Because this project utilizes both an API layer and a graphical frontend, you must spin up both services identically in separate terminal windows.
+## ⚠️ Defensive-Only Disclaimer
 
-**1. Start the Backend Simulation Engine:**
-```bash
-cd threat-graph-backend
-source venv/bin/activate
-uvicorn main:app --reload --port 8000
-```
-*(Leave this terminal running in the background).*
+> **For educational, defensive, and authorized security testing only.**  
+> Do **not** point the simulation at any infrastructure you do not explicitly own, operate, or have written permission to assess.  
+> This project is designed for **defensive threat modeling, attack path analysis, and cyber resilience experimentation**.
 
-**2. Start the Interactive Dashboard:**
-```bash
-cd threat-dashboard
-npm run dev
-```
+---
 
-### Initiating a Cyber Simulation
-1. Once both servers are running, open your web browser to `http://localhost:5173/`.
+## 📸 Live Dashboard Preview
+
+<p align="center">
+  <img src="YOUR_SCREENSHOT_URL_HERE" alt="ThreatGraph Dashboard" width="1000"/>
+</p>
+
+<p align="center">
+  <i>Interactive dashboard showing adversary selection, active defenses, target modeling, and live simulation telemetry.</i>
+</p>
+
+---
+
+## 🚀 What ThreatGraph Does
+
+ThreatGraph combines:
+
+- **GraphRAG-style topology extraction**
+- **Knowledge graph modeling with Neo4j**
+- **Multi-agent Red Team / Blue Team simulation**
+- **Adversary playbook selection**
+- **Attack path correlation**
+- **Probabilistic breach forecasting**
+- **Live dashboard telemetry**
+
+Instead of treating security as a checklist, ThreatGraph attempts to answer:
+
+> **“Given this architecture, these defenses, and this threat actor — how likely is a meaningful breach path?”**
 
    <img width="1131" height="1238" alt="image" src="https://github.com/user-attachments/assets/f2fd27a2-6d9b-43bf-9bc3-8c202733b661" />
 
-3. Input your defensive telemetry in the "Active Defenses" box.
-4. Select an adversary from the dropdown (e.g., *APT29, LockBit, Cl0p*).
-5. Enter an authorized target domain architecture URL.
-6. Click **Initiate Assault**. The backend GraphRAG pipeline will spin up parallel parallelized environments and stream the live exploit logs to the UI!
+---
+
+## 🧠 Core Concept
+
+Traditional scanners answer:
+
+- “What vulnerabilities exist?”
+
+ThreatGraph aims to answer:
+
+- **Which attack paths are actually plausible?**
+- **Which controls meaningfully reduce breach probability?**
+- **How would a specific threat actor chain weaknesses together?**
+- **What happens when multiple agents explore the topology in parallel?**
+
+This makes the project useful for:
+
+- proactive cyber defense
+- threat modeling
+- attack path analysis
+- security architecture reviews
+- tabletop simulation concepts
+- AI-assisted adversary emulation (defensive context)
+
+---
+
+## 🏗️ High-Level Architecture
+
+```text
+                ┌──────────────────────────────┐
+                │   Target Domain / Infra URL  │
+                └──────────────┬───────────────┘
+                               │
+                               ▼
+                 ┌─────────────────────────────┐
+                 │  GraphRAG / Topology Ingest │
+                 │  Public Infra + Tech Signals│
+                 └──────────────┬──────────────┘
+                                │
+                                ▼
+                 ┌─────────────────────────────┐
+                 │   Neo4j Knowledge Graph     │
+                 │ Hosts • Services • Controls │
+                 │ Paths • Weaknesses • Assets │
+                 └──────────────┬──────────────┘
+                                │
+                                ▼
+             ┌────────────────────────────────────────┐
+             │ Multi-Agent Simulation Orchestrator    │
+             │ CrewAI Red / Blue Parallel Reasoning   │
+             └───────┬───────────────────────┬────────┘
+                     │                       │
+                     ▼                       ▼
+         ┌──────────────────────┐   ┌──────────────────────┐
+         │ Red Team Agents      │   │ Blue Team Agents     │
+         │ Attack path search   │   │ Defensive response   │
+         │ TTP chaining         │   │ Control evaluation   │
+         └──────────┬───────────┘   └──────────┬───────────┘
+                    └──────────────┬────────────┘
+                                   ▼
+                    ┌────────────────────────────┐
+                    │ Breach Probability Engine  │
+                    │ Risk Score + Path Evidence │
+                    └──────────────┬─────────────┘
+                                   ▼
+                    ┌────────────────────────────┐
+                    │ Vue Dashboard + Telemetry  │
+                    │ Logs • Score • Simulation  │
+                    └────────────────────────────┘
+
+
+
+
+
+
+
