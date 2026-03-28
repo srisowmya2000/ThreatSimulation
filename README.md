@@ -34,6 +34,7 @@
     <img width="1131" height="1238" alt="image" src="https://github.com/user-attachments/assets/f2fd27a2-6d9b-43bf-9bc3-8c202733b661" />
 </p>
 
+ ⭐ If you find ThreatSimulation useful, starring the repo helps others discover it — thank you!
 <p align="center">
   <i>Interactive dashboard showing adversary selection, active defenses, target modeling, and live simulation telemetry.</i>
 </p>
