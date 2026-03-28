@@ -133,7 +133,4 @@ This makes the project useful for:
 
 
 
-⭐ If you find ThreatSimulation useful, starring the repo helps others discover it — thank you!
-
-
 
